@@ -52,5 +52,5 @@ jobs:
         # Dangerfiles.
         run: |
           DEBUG="*" yarn run danger ci \
-            --dangerfile mokagio/danger-github-actions-examples/dangerfiles/label.ts \
+            --dangerfile dangerfiles/label.ts \
             --id pr_labels
