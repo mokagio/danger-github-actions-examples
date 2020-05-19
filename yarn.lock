@@ -323,7 +323,7 @@ cross-spawn@^6.0.0:
 
 "danger@https://github.com/mokagio/danger-js.git#add-logs-for-github-action-flow":
   version "10.2.0"
-  resolved "https://github.com/mokagio/danger-js.git#05116ebf308c4ff7a519673695c787d982b79cd6"
+  resolved "https://github.com/mokagio/danger-js.git#8d54cf1354f5c4cbd083be639c210c839bbd22dc"
   dependencies:
     "@babel/polyfill" "^7.2.5"
     "@octokit/rest" "^16.43.1"
