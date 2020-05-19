@@ -321,9 +321,10 @@ cross-spawn@^6.0.0:
     shebang-command "^1.2.0"
     which "^1.2.9"
 
-"danger@https://github.com/mokagio/danger-js.git#add-logs-for-github-action-flow":
+danger@^10.2.0:
   version "10.2.0"
-  resolved "https://github.com/mokagio/danger-js.git#8d54cf1354f5c4cbd083be639c210c839bbd22dc"
+  resolved "https://registry.yarnpkg.com/danger/-/danger-10.2.0.tgz#e3500c2003aa85dca029ba695cd04a85afcc34ff"
+  integrity sha512-3fVMm3l5Nu5hVh8ddHYmB5iMQcDgECGXXeU2cql1y9yuLq7SYHGt6hbXkEQyEg6z1UGhmRKoCR+iHc2Emnvusg==
   dependencies:
     "@babel/polyfill" "^7.2.5"
     "@octokit/rest" "^16.43.1"

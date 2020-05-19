@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "danger": "https://github.com/mokagio/danger-js.git#add-logs-for-github-action-flow",
+    "danger": "^10.2.0",
     "typescript": "^3.9.2"
   }
 }
