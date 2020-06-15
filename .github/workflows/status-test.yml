@@ -1,0 +1,11 @@
+name: Test status event triggers a workflow
+on: status
+
+jobs:
+  dump_context_on_status:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
