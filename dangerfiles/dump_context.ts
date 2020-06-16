@@ -17,6 +17,9 @@ export declare function message(message: string): void
 export async function dumpContext() {
   message(`${danger}`)
   message(`${JSON.stringify(danger, null, 2)}`)
+  // Just a test to see if the utils object is available and understand how
+  // the stringify representation works
+  message(`${danger.utils.sentence(['Code', 'test', '☕️'])}`)
 };
 
 // Not exactly sure why, but in order for the multiple files + import setup to
