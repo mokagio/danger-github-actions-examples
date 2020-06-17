@@ -1,5 +1,1 @@
 # Danger + GitHub Actions examples
-
-
-
-
