@@ -18,9 +18,6 @@ jobs:
       # to check the context to see if this was triggered by a PR or a plain
       # issue.
       github.event.pull_request != null || github.event.issue.pull_request != null
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      DANGER_GITHUB_API_BASE_URL: 'https://api.github.com'
     steps:
       # For debugging
       - name: Dump GitHub context
@@ -53,3 +50,6 @@ jobs:
       - name: ⚠️ Danger
         run: |
           yarn run danger ci --dangerfile dangerfiles/multiple_checks.ts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DANGER_GITHUB_API_BASE_URL: 'https://api.github.com'
