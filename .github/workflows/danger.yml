@@ -6,6 +6,8 @@ on:
     #
     # TODO: also need to add events to check for the milestone
     types: [opened, reopened, synchronize, labeled, unlabeled]
+  issues:
+    types: [milestoned, demilestoned]
 
 jobs:
   danger:
