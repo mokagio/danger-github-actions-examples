@@ -3,8 +3,6 @@ on:
   pull_request:
     # Because this validates labels, want it to run when the labels change, not
     # only when a PR is opened/reopened or changes are pushed to it.
-    #
-    # TODO: also need to add events to check for the milestone
     types: [opened, reopened, synchronize, labeled, unlabeled]
   issues:
     types: [milestoned, demilestoned]
