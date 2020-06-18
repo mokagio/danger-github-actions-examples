@@ -4,9 +4,6 @@ on: status
 jobs:
   test_danger_on_status:
     runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      DANGER_GITHUB_API_BASE_URL: 'https://api.github.com'
     steps:
       - name: Dump GitHub context
         env:
@@ -38,3 +35,6 @@ jobs:
       - name: ⚠️ Danger
         run: |
           yarn run danger ci --dangerfile dangerfiles/dump_context.ts --id danger_from_status
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DANGER_GITHUB_API_BASE_URL: 'https://api.github.com'
