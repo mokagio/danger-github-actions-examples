@@ -49,5 +49,7 @@ jobs:
         run: |
           yarn run danger ci --dangerfile dangerfiles/multiple_checks.ts
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Using a custom token to see if it makes a difference in how Danger
+          # runs on PRs originating from forks
+          GITHUB_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
           DANGER_GITHUB_API_BASE_URL: 'https://api.github.com'
