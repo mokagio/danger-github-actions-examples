@@ -1,2 +1,1 @@
-# Danger + GitHub Actions examples
-
+# Danger + GitHub Actions spaghetti
