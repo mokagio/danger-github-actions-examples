@@ -1,11 +1,9 @@
 export async function multipleChecks () {
   // The imports _need_ to be done within this async function
   // picked up by the imports resolver Danger uses with remote
-  const {checkLabel} = await import("./label")
-  const {checkMilestone} = await import("./milestone")
+  const {textDiff} = await import("./text-diff")
 
-  await checkLabel()
-  await checkMilestone()
+  await textDiff()
 }
 
 export default multipleChecks
